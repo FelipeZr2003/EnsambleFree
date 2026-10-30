@@ -1,0 +1,28 @@
+/* Estilos propios del configurador. Tailwind se encarga de las clases pequeñas
+   y este archivo guarda las reglas generales que conviene tener a la vista. */
+:root { color-scheme: dark; }
+    html, body { height: 100%; margin: 0; overflow: hidden; background: #09111e; }
+    #viewport { min-height: 0; background: radial-gradient(circle at 50% 42%, #1a2b43 0%, #0d1828 44%, #09111e 100%); }
+    #viewport canvas { display: block; width: 100%; height: 100%; }
+    .glass { background: rgba(16, 26, 41, .88); backdrop-filter: blur(14px); }
+    .control { background: #0d1726; border: 1px solid #25364c; outline: none; }
+    .control:focus { border-color: #32d5ff; box-shadow: 0 0 0 2px rgba(50,213,255,.14); }
+    .tab.active { color: #dbe7f5; border-color: #32d5ff; background: rgba(50,213,255,.08); }
+    .tab { color: #8fa3ba; border: 1px solid transparent; }
+    .scrollbar::-webkit-scrollbar { width: 5px; }
+    .scrollbar::-webkit-scrollbar-thumb { background: #2a3d56; border-radius: 99px; }
+    .status-dot { box-shadow: 0 0 12px #45e6a4; }
+    #addFanGroup { display: none !important; }
+    @media (max-width: 767px) {
+      html, body { overflow: auto; }
+      .app-shell { min-height: 100vh; height: auto; }
+      .app-header { height: auto; min-height: 4rem; gap: .75rem; flex-wrap: wrap; padding: .75rem 1rem; }
+      .app-header > :nth-child(2) { display: none; }
+      .app-main { flex-direction: column; min-height: calc(100vh - 4rem); }
+      .control-sidebar { width: 100%; max-height: 48vh; border-right: 0; border-bottom: 1px solid #25364c; }
+      .control-sidebar #controls { min-height: 0; }
+      .viewer-section { min-height: 52vh; }
+      #viewport { min-height: 42vh; }
+      .summary-card { max-height: calc(100vh - 2rem); }
+      #summaryContent { max-height: 52vh; overflow: auto; }
+    }

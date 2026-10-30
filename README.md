@@ -27,7 +27,7 @@ No requiere backend ni base de datos: el diseño se mantiene en el navegador y p
 
 ## 3. ¿Cómo se ve?
 
-![Captura del configurador 3D de EnsambleFree](docs/configurador.png)
+[![Ver Demo en Vivo](https://img.shields.io/badge/Demo-🌐_Ver_Proyecto_Online-2ea44f?style=for-the-badge)](https://felipezr2003.github.io/EnsambleFree/)
 
 La interfaz está dividida en tres áreas sencillas: controles a la izquierda, vista 3D al centro y estado del diseño en la parte inferior. Desde las pestañas se pueden cambiar las dimensiones, los paneles, la placa base y la refrigeración.
 
